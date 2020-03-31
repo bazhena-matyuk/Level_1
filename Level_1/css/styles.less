@@ -64,6 +64,10 @@ section {
     border: 0.143rem solid @color_1;
     padding: 1.5rem 4rem;
 }
+.btn_orange:hover {
+    background-color: @color_4;
+    color: @color_2;
+}
 a:hover, a:focus {
     color: @color_1;
     border: @color_1;
@@ -96,10 +100,6 @@ a:hover, a:focus {
         }
         button {
             margin-bottom: 11rem;
-        }
-        button:hover {
-            background-color: @color_4;
-            color: @color_5;
         }
     }
 }
@@ -149,8 +149,8 @@ a:hover, a:focus {
                     position: absolute;
                     z-index: 1;
                     display: block;
-                    top: 42%;
-                    right: calc(50% - 3rem);
+                    top: calc(50% - 2rem);
+                    right: calc(50% - 4.75rem);
                 }
             }            
         }
@@ -158,7 +158,7 @@ a:hover, a:focus {
 }
 .team {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     .one_person {
         width: 20%;
         img {
@@ -176,6 +176,13 @@ a:hover, a:focus {
                 border: 0.0715rem solid @color_2;
                 padding: 1rem;
                 margin-right: 0.286rem;
+                border-radius: 0.3575rem;
+            }
+            .fa:hover {
+                border: 0.0715rem solid @color_1;
+            }
+            .fa-facebook {
+                padding: 1rem 1.268rem;
             }
         }
     }
@@ -184,44 +191,50 @@ a:hover, a:focus {
     .carousel {
         width: 100%;
         .carousel-indicators {
-            right: -50%;
+            margin-left: 50%;
+            margin-right: 0;
             li[class="my_li"] {
                 width: 0.5rem;
                 height: 0.5rem;
                 color: @color_2;
+                border-radius: 100%;
             }
-            li[class="my_li"]:active {
+            li[class="my_li active"] {
                 width: 0.5rem;
                 height: 0.5rem;
+                color: @color_4;
+                border-radius: 100%;
             }
         }
         .carousel-inner {
             .carousel-item {
+                .my_carousel {
                 width: 100%;
                 display: flex;
-                justify-content: center;
-                .left_img {
-                    width: 50%;
-                    background-image: url(../img/Img_21.png);
-                    background-size: cover;
-                    img {
-                        height: 100%;
-                    }                    
-                }
-                .right_img {
-                    display: block;
-                    width: 50%;
-                    background-image: url(../img/Img_21.png);
-                    background-size: cover;
-                    .smaller {
-                        font-size: 0.93rem;
-                        margin: 1rem 4.4rem 3rem 4.4rem;
+                justify-content: center;                
+                    .left_img {
+                        width: 50%;
+                        background-image: url(../img/Img_21.png);
+                        background-size: cover;
+                        img {
+                            height: 100%;
+                        }                    
                     }
-                    .cardo {
-                        font-family: 'Cardo-Italic';
-                        font-size: 2.5rem;
-                        line-height: 3rem;
-                        margin: 4.4rem 4.4rem 1rem 4.4rem;
+                    .right_img {
+                        display: block;
+                        width: 50%;
+                        background-image: url(../img/Img_21.png);
+                        background-size: cover;
+                        .smaller {
+                            font-size: 0.93rem;
+                            margin: 1rem 4.4rem 3rem 4.4rem;
+                        }
+                        .cardo {
+                            font-family: 'Cardo-Italic';
+                            font-size: 2.5rem;
+                            line-height: 3rem;
+                            margin: 4.4rem 4.4rem 1rem 4.4rem;
+                        }
                     }
                 }
             }
@@ -233,10 +246,6 @@ a:hover, a:focus {
     .light {
         font-family: Raleway-Light;
         font-size: 2rem;
-    }
-    button:hover {
-        background-color: @color_5;
-        color: @color_1;
     }
 }
 .bottom_part_1 {
@@ -260,7 +269,7 @@ a:hover, a:focus {
                 text-align: center;
                 a:hover, a:focus {
                     color: @color_1;
-                    border: @color_1;
+                    border: 0.0715rem solid @color_1;
                     text-decoration: none;
                 }                
                 .fa {
@@ -268,6 +277,10 @@ a:hover, a:focus {
                     border: 0.0715rem solid @color_4;
                     padding: 1rem;
                     margin-right: 0.286rem;
+                    border-radius: 0.3575rem;
+                }
+                .fa-facebook {
+                    padding: 1rem 1.268rem;
                 }
             }
         }

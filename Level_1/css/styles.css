@@ -55,6 +55,10 @@ section {
   border: 0.143rem solid #e84545;
   padding: 1.5rem 4rem;
 }
+.btn_orange:hover {
+  background-color: #ffffff;
+  color: #6e7279;
+}
 a:hover,
 a:focus {
   color: #e84545;
@@ -90,10 +94,6 @@ a:focus {
 }
 .top_part .text_with_btn button {
   margin-bottom: 11rem;
-}
-.top_part .text_with_btn button:hover {
-  background-color: #ffffff;
-  color: #3a3e64;
 }
 .features .features_3 {
   display: flex;
@@ -141,12 +141,12 @@ a:focus {
   position: absolute;
   z-index: 1;
   display: block;
-  top: 42%;
-  right: calc(50% - 3rem);
+  top: calc(50% - 2rem);
+  right: calc(50% - 4.75rem);
 }
 .team {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .team .one_person {
   width: 20%;
@@ -165,46 +165,57 @@ a:focus {
   border: 0.0715rem solid #6e7279;
   padding: 1rem;
   margin-right: 0.286rem;
+  border-radius: 0.3575rem;
+}
+.team .one_person .person_pages .fa:hover {
+  border: 0.0715rem solid #e84545;
+}
+.team .one_person .person_pages .fa-facebook {
+  padding: 1rem 1.268rem;
 }
 .clients .carousel {
   width: 100%;
 }
 .clients .carousel .carousel-indicators {
-  right: -50%;
+  margin-left: 50%;
+  margin-right: 0;
 }
 .clients .carousel .carousel-indicators li[class="my_li"] {
   width: 0.5rem;
   height: 0.5rem;
   color: #6e7279;
+  border-radius: 100%;
 }
-.clients .carousel .carousel-indicators li[class="my_li"]:active {
+.clients .carousel .carousel-indicators li[class="my_li active"] {
   width: 0.5rem;
   height: 0.5rem;
+  color: #ffffff;
+  border-radius: 100%;
 }
-.clients .carousel .carousel-inner .carousel-item {
+.clients .carousel .carousel-inner .carousel-item .my_carousel {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.clients .carousel .carousel-inner .carousel-item .left_img {
+.clients .carousel .carousel-inner .carousel-item .my_carousel .left_img {
   width: 50%;
   background-image: url(../img/Img_21.png);
   background-size: cover;
 }
-.clients .carousel .carousel-inner .carousel-item .left_img img {
+.clients .carousel .carousel-inner .carousel-item .my_carousel .left_img img {
   height: 100%;
 }
-.clients .carousel .carousel-inner .carousel-item .right_img {
+.clients .carousel .carousel-inner .carousel-item .my_carousel .right_img {
   display: block;
   width: 50%;
   background-image: url(../img/Img_21.png);
   background-size: cover;
 }
-.clients .carousel .carousel-inner .carousel-item .right_img .smaller {
+.clients .carousel .carousel-inner .carousel-item .my_carousel .right_img .smaller {
   font-size: 0.93rem;
   margin: 1rem 4.4rem 3rem 4.4rem;
 }
-.clients .carousel .carousel-inner .carousel-item .right_img .cardo {
+.clients .carousel .carousel-inner .carousel-item .my_carousel .right_img .cardo {
   font-family: 'Cardo-Italic';
   font-size: 2.5rem;
   line-height: 3rem;
@@ -216,10 +227,6 @@ a:focus {
 .download .light {
   font-family: Raleway-Light;
   font-size: 2rem;
-}
-.download button:hover {
-  background-color: #3a3e64;
-  color: #e84545;
 }
 .bottom_part_1 {
   margin-bottom: 0;
@@ -247,7 +254,7 @@ a:focus {
 .bottom_part_1 .footer_first .social_media .person_pages a:hover,
 .bottom_part_1 .footer_first .social_media .person_pages a:focus {
   color: #e84545;
-  border: #e84545;
+  border: 0.0715rem solid #e84545;
   text-decoration: none;
 }
 .bottom_part_1 .footer_first .social_media .person_pages .fa {
@@ -255,6 +262,10 @@ a:focus {
   border: 0.0715rem solid #ffffff;
   padding: 1rem;
   margin-right: 0.286rem;
+  border-radius: 0.3575rem;
+}
+.bottom_part_1 .footer_first .social_media .person_pages .fa-facebook {
+  padding: 1rem 1.268rem;
 }
 .bottom_part_2 {
   background-image: url(../img/Img_23.png);
