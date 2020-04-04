@@ -82,13 +82,26 @@ a:hover, a:focus {
         border-bottom: 0.0715rem solid @color_2;
         display: flex;
         justify-content: space-around;
+        @media (max-width: 575.98px) {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
         img {
             margin-top: 1.5rem;
+            @media (max-width: 575.98px) {
+                margin-bottom: 0;
+            }            
         }
         .nav_bar {
             margin-top: 1.5rem;
+            .justify-content-end {
+                @media (max-width: 575.98px) {
+                    justify-content: space-around!important;
+                }
+            }
         }
-    }
+    }       
     .text_with_btn {        
         text-align: center;
         .the_biggest {
@@ -107,9 +120,19 @@ a:hover, a:focus {
     .features_3 {
         display: flex;
         justify-content: space-around;
+        @media (max-width: 575.98px) {
+            display: block;
+        }
         .feature {
             text-align: center;
             width: 20%;
+            @media (max-width: 575.98px) {
+                width: 100%;
+                p {
+                    margin-right: 3rem;
+                    margin-left: 3rem;
+                }
+            }
         }
     } 
 }
@@ -119,10 +142,21 @@ a:hover, a:focus {
         width: 100%;
         display: flex;
         justify-content: center;
+        @media (max-width: 575.98px) {
+            display: block;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+        }
         .work {
             margin-bottom: 0.1rem;
             margin-right: 0.1rem;        
             width: 25%;
+            @media (max-width: 575.98px) {
+                width: 80%;
+                margin-right: auto;
+                margin-left: auto;
+            }
             .work_one {
                 .botton_layer {
                     width: 100%;
@@ -137,12 +171,18 @@ a:hover, a:focus {
             .top_layer {
                 position: absolute;
                 width: 25%;
+                @media (max-width: 575.98px) {
+                    width: 100%;
+                }
                 img[class="top_img"] {          
                 width: 99%;
                 margin-bottom: 0.1rem;
                 margin-right: 0.1rem;
                 position: relative; 
                 z-index: 0;
+                @media (max-width: 575.98px) {
+                    width: 80%;
+                }
                 }
                 .top_text {
                     text-align: center;
@@ -151,6 +191,9 @@ a:hover, a:focus {
                     display: block;
                     top: calc(50% - 2rem);
                     right: calc(50% - 4.75rem);
+                    @media (max-width: 575.98px) {
+                        right: calc(50% - 0.75rem);
+                    }
                 }
             }            
         }
@@ -159,8 +202,16 @@ a:hover, a:focus {
 .team {
     display: flex;
     justify-content: space-around;
+    @media (max-width: 575.98px) {
+        display: block;
+        text-align: center;
+    }
     .one_person {
         width: 20%;
+        @media (max-width: 575.98px) {
+            width: 80%;
+            margin: 0 auto 3rem auto;
+        }
         img {
             width: 100%;
         }
@@ -193,6 +244,10 @@ a:hover, a:focus {
         .carousel-indicators {
             margin-left: 50%;
             margin-right: 0;
+            @media (max-width: 575.98px) {
+                margin-left: 0;
+                margin-bottom: 0.75rem;
+            }
             li[class="my_li"] {
                 width: 0.5rem;
                 height: 0.5rem;
@@ -211,13 +266,22 @@ a:hover, a:focus {
                 .my_carousel {
                 width: 100%;
                 display: flex;
-                justify-content: center;                
+                justify-content: center; 
+                @media (max-width: 575.98px) {
+                    display: block;  
+                }   
                     .left_img {
                         width: 50%;
                         background-image: url(../img/Img_21.png);
                         background-size: cover;
+                        @media (max-width: 575.98px) {
+                            width: 100%;
+                        }
                         img {
                             height: 100%;
+                            @media (max-width: 575.98px) {
+                                margin: 0;
+                            }
                         }                    
                     }
                     .right_img {
@@ -225,17 +289,39 @@ a:hover, a:focus {
                         width: 50%;
                         background-image: url(../img/Img_21.png);
                         background-size: cover;
+                        @media (max-width: 575.98px) {
+                            width: 100%;
+                            text-align: center;
+                        }
                         .smaller {
                             font-size: 0.93rem;
                             margin: 1rem 4.4rem 3rem 4.4rem;
+                            @media (max-width: 575.98px) {
+                                margin: 1rem 4.4rem 1rem 4.4rem;
+                                padding-bottom: 2rem;
+                            }                            
                         }
                         .cardo {
                             font-family: 'Cardo-Italic';
                             font-size: 2.5rem;
                             line-height: 3rem;
                             margin: 4.4rem 4.4rem 1rem 4.4rem;
+                            @media (max-width: 575.98px) {
+                                margin: 0 4.4rem 1rem 4.4rem;
+                                padding-top: 2rem;
+                            }
                         }
                     }
+                }
+            }
+            .carousel-control-prev {
+                @media (max-width: 575.98px) {
+                    display: none;
+                }
+            }
+            .carousel-control-next {
+                @media (max-width: 575.98px) {
+                    display: none;
                 }
             }
         }
@@ -243,6 +329,10 @@ a:hover, a:focus {
 }
 .download {
     text-align: center;
+    @media (max-width: 575.98px) {
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
     .light {
         font-family: Raleway-Light;
         font-size: 2rem;
